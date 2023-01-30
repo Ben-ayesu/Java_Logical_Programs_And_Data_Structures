@@ -1,8 +1,8 @@
 package Section2;
 
 import java.util.Scanner;
-
-public class SumOfPrimeDigits {
+public class Assignment2 {
+    // Sum of multiples of 3 aka divisible by 3
     public static void main(String[] args) {
         System.out.println("Enter a number: ");
         Scanner scanner = new Scanner(System.in);
@@ -11,7 +11,7 @@ public class SumOfPrimeDigits {
 
         while (num != 0) {
             digit = num % 10;
-            if (digit == 3 || digit == 3 || digit == 5 || digit == 7){
+            if (digit % 3 == 0) {
                 sums += digit;
             }
             num = num / 10;
