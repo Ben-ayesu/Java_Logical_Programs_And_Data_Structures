@@ -7,11 +7,13 @@ public class ReverseANumber {
         System.out.println("Enter a number: ");
         Scanner scanner = new Scanner(System.in);
         int digit, num = scanner.nextInt();
+        int result = 0;
 
         while (num != 0) {
             digit = num % 10;
-            System.out.print(digit);
+            result = result * 10 + digit;
             num = num / 10;
         }
+        System.out.print(result);
     }
 }
