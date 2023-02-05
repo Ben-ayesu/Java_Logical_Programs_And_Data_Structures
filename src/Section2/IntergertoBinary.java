@@ -18,7 +18,7 @@ public class IntergertoBinary {
         }
 
         for (int j = i-1; j >= 0; j--) {
-            System.out.println(binaryNum[j]);
+            System.out.print(binaryNum[j]);
         }
     }
 }
