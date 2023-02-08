@@ -1,4 +1,4 @@
-package Section2;
+package Section2_Numbers;
 
 public class Assignment4 {
     public static void main(String[] args) {
