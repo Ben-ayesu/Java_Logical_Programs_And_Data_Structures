@@ -6,8 +6,14 @@ public class Assignment1CheckIfStringIsPalindrome {
     public static void main(String[] args) {
         System.out.println("Enter a string: ");
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        String input = scanner.next().toLowerCase();
+        String reversed = String.valueOf(new StringBuilder(input).reverse()).toLowerCase();
 
-        System.out.println(new StringBuilder(input).reverse());
+        if (input.equals(reversed)) {
+            System.out.println("Is a Palindrome");
+        } else {
+            System.out.println("Is not a Palindrome");
+
+        }
     }
 }
